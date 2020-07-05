@@ -1,0 +1,10 @@
+table {
+    background-color: green;
+    border-style: solid;
+
+}
+tr td {
+    background-color: aqua;
+    width: 30px;
+    height: 30px;
+}
