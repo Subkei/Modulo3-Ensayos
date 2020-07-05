@@ -1,0 +1,17 @@
+body {
+    background-color: lavender;
+    border: 1px solid #ddd;
+    padding: 3px;
+    text-align: center;
+    font-family: "-apple-system", BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 14pt;
+    width: 100%
+}
+
+#fecha {
+    font-weight: bold;
+}
+
+button {
+    color: red;
+}
