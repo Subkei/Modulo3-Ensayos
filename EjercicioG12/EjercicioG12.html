@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Grupal 12</title>
+
+    <!--JQuery, validation plugin -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/additional-methods.js"></script>
+    <!--Script-->
+    <script src="EjercicioG12.js"></script>
+
+</head>
+<body>
+
+    <form class="cmxform" id="commentForm" method="get" action="">
+        <fieldset >
+          <legend>Por favor ingrese su nombre, correo electrónico y un comentario</legend>
+          <p>
+            <label for="cname">Nombre del artículo (requerido, a lo más 25 caracteres)</label>
+            <input id="cname" name="name" type="text" >
+          </p>
+          <p>
+            <label for="cmarca">Marca (requerido)</label>
+            <input id="cmarca" type="text" name="marca" >
+          </p>
+          <p>
+            <label for="cstock">Stock (requerido)</label>
+            <input id="cstock" type="text" name="stock" >
+          </p>
+          <p>
+            <label for="cestado">Estado</label>
+            <select>
+                <option value="">Seleccione una opcion</option>
+                <option value="Bueno">Bueno</option>
+                <option value="Regular">Regular</option>
+                <option value="Malo">Malo</option>
+            </select>
+          </p>
+          <p>
+            <label for="ccolor">Color </label>
+            <input id="ccolor" type="text" name="color">
+          </p>
+          <p>
+            <input class="submit" type="submit" value="Validar formulario">
+          </p>
+        </fieldset>
+      </form>
+    
+</body>
+</html>
