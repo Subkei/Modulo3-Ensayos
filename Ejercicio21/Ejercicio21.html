@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 21 Jquery</title>
+    <link rel="stylesheet" href="Ejercicio21.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    
+<header>Este es un encabezado</header>
+
+<p id="texto1">
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error fugiat quaerat eveniet qui asperiores eius, tenetur nisi dolorem minus. Ullam veniam, obcaecati voluptate itaque impedit laborum, labore earum explicabo delectus tenetur pariatur vitae at nihil tempora maxime, ut ab fugit eum commodi iste velit ducimus provident rerum blanditiis. Dolor obcaecati culpa sequi voluptates, itaque nam enim illum ut, officiis alias dolorum quo excepturi, harum eveniet incidunt voluptas recusandae sunt ratione odit. Ex accusamus consectetur impedit velit fugit ipsam porro voluptatibus.
+</p>
+<p id="texto2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum ipsa rerum aliquid commodi et quaerat reiciendis autem, dicta necessitatibus delectus eaque, unde repellendus dignissimos impedit molestias magnam voluptatum quis tempore? Architecto velit natus ratione expedita similique, exercitationem optio! Autem id voluptatibus quos natus nobis quod tempore, eaque libero voluptate. Non facilis aliquam tempora tempore magni corporis beatae vitae aperiam odio. Vero pariatur veritatis illo harum eum, aliquam numquam officiis rerum vel labore.   
+</p>
+
+<button id="show">Resetear</button>
+
+</body>
+
+<script>
+    $(document).ready(function(){
+      $("p").click(function(){
+        $(this).hide();
+      });
+        $("#show").click(function(){
+        $("p").show();
+      });
+    });
+    </script>
+</html>
