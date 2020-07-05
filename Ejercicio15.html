@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Ejercicio 15</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px 15px 15px 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+header {
+  background-color: yellow;
+  color: black;
+  border-radius: 10px;
+  padding: 3px;
+  text-align: center;
+}
+
+.sub-titulo {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+.menu{
+  list-style-type: none;
+  padding: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 10px;
+  background-color: orange;
+}
+
+.menu-s {
+  list-style-type: none;
+  padding: 15px;
+  color: black;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 10px;
+}
+
+.bloque1 {
+  padding: 60px;
+  background-color: blue;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.bloque2 {
+  padding: 25px;
+  background-color: blue;
+  border-radius: 10px;
+  margin-bottom: 35px;
+  margin-right: 35px;
+}
+
+.bloque3 {
+  padding: 45px;
+  background-color: blue;
+  border-radius: 10px;
+  margin-left: 0px;
+}
+
+section {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer {
+  background-color: pink;
+  color: black;
+  font-size: 14px;
+  font-family: 'Courier New';
+  text-align: left;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+/* Para Smartphones adaptable 100% */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 480px) {
+  /* Para smartphones: */
+  .menu{display: none;}
+  .menu-s{display: block;}
+  .sub-titulo{display: none;}
+}
+
+@media only screen and (min-width: 600px) {
+  /* Para tablets: */
+  .menu{display: none;}
+  .menu-s{display: block;}
+  .sub-titulo{display: block;}
+}
+@media only screen and (min-width: 936px) {
+  /* Para escritorios grandes: */
+  .menu{display: block;}
+  .menu-s{display: none;}
+  .sub-titulo{display: block;}
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 1366px) {
+  /* Para escritorios muy grandes: */
+  .menu{display: block;}
+  .menu-s{display: none;}
+  .sub-titulo{display: block;}
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Mi encabezado</h1>
+  <h2 class="sub-titulo">Mi sub-titulo de encabezado</h2>
+</header>
+
+<main class="row">
+    
+  <nav class="col-1 col-s-4">
+
+    <section class="menu-s">
+      <select>
+        <option>Inicio</option>
+        <option>Tutorial</option>
+        <option>Ejemplo</option>
+      </select>
+    </section>
+
+    <section class="menu">
+        <a href="#">Inicio</a><br>
+        <a href="#">Tutorial</a><br>
+        <a href="#">Ejemplo</a>
+    </section>
+
+  </nav>
+
+  <section class="col-3 col-s-4">
+     <section class="bloque1">
+      <h2>Bloque Nº1</h2>
+      <p>Muy grande</p>
+     </section> 
+  </section>
+
+  <section class="col-7 col-s-4">
+    <section class="bloque2 col-5 col-s-12">
+      <h2>Bloque Nº2</h2>
+      <p>Mediano</p>
+    </section>
+
+    <section class="bloque3 col-5 col-s-12 ">
+        <h2>Bloque Nº3</h2>
+        <p>Grande</p>
+    </section>
+  </section>
+</main>
+
+<footer>
+  <p>Mi pie de página</p>
+  <p>Autor: Sebastián Acevedo, Mayo de 2020</p>
+</footer>
+
+</body>
+</html>
