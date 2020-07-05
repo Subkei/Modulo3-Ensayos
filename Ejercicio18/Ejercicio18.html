@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <div class="container-fluid table-active p-5">
+    <h2>Conversor de monedas</h2>
+    <p>Este es un conversor de unidades monetarias</p>
+    
+    <p>
+        <label>Pesos</label>
+        <input id="inputPesos" type="number" placeholder="Pesos" oninput="pesosDolares(this.value)" onchange="pesosDolares(this.value)">
+    </p>
+      <p>
+        <label>Dolares</label>
+        <input id="inputDolares" type="number" placeholder="Dolares" oninput="dolaresPesos(this.value)" onchange="dolaresPesos(this.value)">
+    </p>
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-success active">
+            <input type="radio" name="divisa" id="" checked> Divisa 1
+        </label>
+        <label class="btn btn-success">
+            <input type="radio" name="divisa" id=""> Divisa 2
+        </label>
+        <label class="btn btn-success">
+            <input type="radio" name="divisa" id=""> Divisa 3
+        </label>
+        <label class="btn btn-success">
+            <input type="radio" name="divisa" id=""> Divisa 4
+        </label>
+        <label class="btn btn-success">
+            <input type="radio" name="divisa" id=""> Divisa 5
+        </label>
+    </div>
+    </div>
+
+    
+    <script src="Ejercicio18.js"></script>
+</body>
+</html>
