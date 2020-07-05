@@ -1,0 +1,20 @@
+#calculadora {
+    width: 280px;
+    height: 380px;
+    padding: 5px;
+}
+
+#resultado {
+    font-family: monospace;
+    font-size: 20px;
+}
+
+#igual {
+    width: 19%;
+}
+#suma {
+    width: 20%;
+}
+#reinicia {
+    width: 19%;
+}
