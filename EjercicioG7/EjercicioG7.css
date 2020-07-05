@@ -1,0 +1,33 @@
+body {
+    background-color: gainsboro;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: dodgerblue;
+}
+
+.form {
+    
+    padding: 15px;
+    border-color: blue;
+    border-radius: 3px;
+    border: 1px solid yellowgreen;
+    border-collapse: collapse;
+}
+
+#instrucciones {
+    font-size: large;
+}
+
+#resultado {
+  /*  display: none;*/
+}
+
+#pregunta {
+    padding-top: 2px;
+}
+
+#error {
+    color: red;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EjercicioG7.css">
+    <title>Ejercicio Grupal 7 - Encuesta JS</title>
+</head>
+<body>
+
+    <h1>Encuesta</h1>
+    
+    <p id="instrucciones">Para cada pregunta, solo una de las 5 alternativas es correcta.<br>
+    Cada respuesta correcta equivale a 1 punto.<br>
+    Puede repetir la encuesta solo 3 veces.<br>
+    Al finalizar, se dará a conocer el puntaje obtenido. ¡Suerte!</p>
+
+   
+    <form class="form">
+        <label id="pregunta1">
+            Esta es la pregunta 1 :
+            <input type="radio" name="p1-alt" id="p1-alt1" value="1">
+            Alternativa 1
+            <input type="radio" name="p1-alt" id="p1-alt2" value="2">
+            Alternativa 2
+            <input type="radio" name="p1-alt" id="p1-alt3" value="3">
+            Alternativa 3
+            <input type="radio" name="p1-alt" id="p1-alt4" value="4">
+            Alternativa 4
+        </label><br>
+
+        <label for="pregunta2">
+            Esta es la pregunta 2 :
+            <input type="radio" name="p2-alt" id="p2-alt1" value="1">
+            Alternativa 1
+            <input type="radio" name="p2-alt" id="p2-alt2" value="2">
+            Alternativa 2
+            <input type="radio" name="p2-alt" id="p2-alt3" value="3">
+            Alternativa 3
+            <input type="radio" name="p2-alt" id="p2-alt4" value="4">
+            Alternativa 4
+        </label><br>
+
+        <label for="pregunta3">
+            Esta es la pregunta 3 :
+            <input type="radio" name="p3-alt" id="p3-alt1" value="1">
+            Alternativa 1
+            <input type="radio" name="p3-alt" id="p3-alt2" value="2">
+            Alternativa 2
+            <input type="radio" name="p3-alt" id="p3-alt3" value="3">
+            Alternativa 3
+            <input type="radio" name="p3-alt" id="p3-alt4" value="4">
+            Alternativa 4
+        </label><br>
+
+        <label for="pregunta4">
+            Esta es la pregunta 4 :
+            <input type="radio" name="p4-alt" id="p4-alt1" value="1">
+            Alternativa 1
+            <input type="radio" name="p4-alt" id="p4-alt2" value="2">
+            Alternativa 2
+            <input type="radio" name="p4-alt" id="p4-alt3" value="3">
+            Alternativa 3
+            <input type="radio" name="p4-alt" id="p4-alt4" value="4">
+            Alternativa 4
+        </label><br>
+
+        <label for="pregunta5">
+            Esta es la pregunta 5 :
+            <input type="radio" name="p5-alt" id="p5-alt1" value="1">
+            Alternativa 1
+            <input type="radio" name="p5-alt" id="p5-alt2" value="2">
+            Alternativa 2
+            <input type="radio" name="p5-alt" id="p5-alt3" value="3">
+            Alternativa 3
+            <input type="radio" name="p5-alt" id="p5-alt4" value="4">
+            Alternativa 4
+        </label><br>
+    </form><br>
+    
+    <div>
+        <div id="error"></div>
+    </div>
+
+    <!--<button type="button" onclick="alert('resultados')">Enviar</button>-->
+
+    <div>
+        <p><input type="submit" value="Enviar"></p>
+    </div>
+
+    <div id="resultado">
+       <!--<h3>Encuesta finalizada.</h3>-->
+        <p>Respuestas correctas: </p>
+        <p>Puntaje total obtenido: </p>
+    </div> 
+    
+
+    <script src="EjercicioG7.js"></script>
+    
+</body>
+</html>
