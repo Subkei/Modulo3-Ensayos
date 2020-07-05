@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Grupal 13</title>
+
+      <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--JQuery, Datepicker-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/humanity/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+</head>
+
+<body class="bg-light ">
+    <h2 class="display-4 text-center">Compara Calendarios</h2>
+    <table class="table table-striped  container-lg">
+        <tr>
+            <!--Calendario 1 que se despliega desde un input y arroja la fecha normalizada-->
+            <td scope="row">
+                Fecha 1:
+                <input type="text" id="fecha1" />
+            </td>
+             <!--Calendario 2 que se despliega desde un input y arroja la fecha normalizada-->
+            <td>
+                Fecha 2:
+                <input type="text" id="fecha2" />
+            </td>
+             <!--Botón de validar comparación de fechas -->
+            <td>
+                <button type="button" id="btn-validar" class="btn btn-primary btn-lg btn-block" onclick="fecha()">Validar</button>                
+            </td>
+        </tr>
+
+    </table>
+     <!--Se muestra cual fecha es mayor o si son iguales-->
+    <div id="compara" class="text-lg-center text-danger bg-warning"></div>
+
+    <!--Script js-->
+    <script src="EjercicioG13.js"></script>
+
+</body>
+
+</html>
