@@ -1,0 +1,28 @@
+body {
+background-color:rgb(104, 104, 184);
+}
+
+h2 {
+    margin:auto ;
+    text-align: center;
+    padding: 15px;
+}
+
+.cuadrado {
+    width: 180px; 
+    height: 180px; 
+	position:absolute;
+	top:0;
+	left:0;
+    margin: auto;
+    background: #1caa28;
+    border: solid;
+}
+
+#botones {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding-top: 400px;
+}
