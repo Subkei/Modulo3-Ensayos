@@ -1,0 +1,23 @@
+  body{
+      background-color: chocolate;
+      color: azure;
+      text-shadow: cadetblue;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      margin-left: 250px;
+      padding: 65px;
+  }
+
+#contlista1 #conlista2 {
+    margin-left: 20px;
+    
+  }
+
+#btnenviar {
+    margin-top: 5px;
+}
+
+li {
+    color: red;
+    font-style: italic;
+    font-size: 1.2em;
+}
