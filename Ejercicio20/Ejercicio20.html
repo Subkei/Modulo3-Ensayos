@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Ejercicio20.css">
+    <title>Ejercicio 20</title>
+
+</head>
+
+<body>
+    <h2>Formulario Registro de alumnos</h2>
+    <form action="" method="get">
+        <p>
+            Nombre: (*) &nbsp;<input type="text" id="name" name="name" minlength="5" maxlength="30" autofocus required />
+        </p>
+
+        <p>
+            Apellidos: (*) &nbsp;<input type="text" id="lastname" name="apellido" maxlength="50" required />
+        </p>
+
+        <p>
+            Fecha de nacimiento: (*) &nbsp;<input type="date" name="fecha-nac" required />
+        </p>
+
+        <p>
+            Teléfono: <input type="tel" name="tel_control" minlength="7" maxlength="12" value="" />
+        </p>
+
+        <p>
+            Nivel educacional: &nbsp;
+            <select>
+                <option>--Seleccionar--</option>
+                <option>Primero básico</option>
+                <option>Segundo básico</option>
+                <option>Tercero básico</option>
+                <option>Cuarto básico</option>
+                <option>Quinto básico</option>
+                <option>Sexto básico</option>
+                <option>Septimo básico</option>
+                <option>Octavo básico</option>
+                <option>Primero medio</option>
+                <option>Segundo medio</option>
+                <option>Tercero medio</option>
+                <option>Cuarto medio</option>
+            </select>
+        </p>
+
+        <p>
+            Dirección: (*) &nbsp;<input type="text" name="dirección" maxlength="100" required />
+        </p>
+
+        <p>
+            Ciudad: (*) &nbsp;<input type="text" name="dirección" maxlength="30" required />
+        </p>
+        Región: &nbsp;
+        <select name="region">
+            <option value="default">--Seleccionar---</option>
+            <option value="13">Región metropolitana</option>
+            <option value="1">Región de tarapaca (I)</option>
+            <option value="2">Región de antofagasta (II)</option>
+            <option value="3">Región de atacama (III)</option>
+            <option value="4">Región de coquimbo (IV)</option>
+            <option value="5">Región de valparaiso (V)</option>
+            <option value="6">Región del libertador gral. bdo. o'higgins (VI)</option>
+            <option value="7">Región del maule (VII)</option>
+            <option value="8">Región del biobio (VIII)</option>
+            <option value="9">Región de la araucania (IX)</option>
+            <option value="10">Región de los lagos (X)</option>
+            <option value="11">Región de aysen (XI)</option>
+            <option value="12">Región de magallanes y la antartica chilena (XII)</option>
+            <option value="14">Región de los rios (XIV)</option>
+            <option value="15">Región de arica y parinacota (XV)</option>
+        </select>
+        <p>
+            <input type="submit" value="Enviar" onclick="alert('Registro guardados')" />
+        </p>
+    </form>
+
+</body>
+
+</html>

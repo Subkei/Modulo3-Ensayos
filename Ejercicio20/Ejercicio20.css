@@ -1,0 +1,18 @@
+body {
+    border: 1px solid;
+    padding-left: 15px;
+    padding: 10px;
+    background-color: lightskyblue;
+    color: rgb(61, 61, 61);
+}
+
+input, select, button {
+    width : 150px;
+    margin: 0;
+    box-sizing: border-box;
+}
+form {
+    border: 1px solid;
+    padding-left: 15px;
+    background-color: beige;
+}
